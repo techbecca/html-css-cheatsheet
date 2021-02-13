@@ -9,45 +9,74 @@
     <!-- Topic: CSS selectors and specificity -->
 
     <h1>CSS Selectors and Specificity Cheatsheet</h1>
+    <section>
+      <h2>Selectors</h2>
+      <table id="selectors">
+        <thead>
+          <th>Name</th>
+          <th>Example</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td>Type</td>
+          <td><code>p</code></td>
+          <td>Selects all <code>&lt;p&gt;</code>tags</td>
+        </tr>
+        <tr>
+          <td>Class</td>
+          <td><code>.class</code></td>
+          <td>Selects all elements with <code>class="class"</code></td>
+        </tr>
+        <tr>
+          <td>Id</td>
+          <td><code>#id</code></td>
+          <td>Selects all elements with <code>id="id"</code></td>
+        </tr>
+        <tr>
+          <td>Chaining selectors</td>
+          <td><code>h3.section-heading</code></td>
+          <td>Rule sets apply only to elements that match all criteria.</td>
+        </tr>
+        <tr>
+          <td>Descendant selectors</td>
+          <td><code>div p</code></td>
+          <td>Match elements that are descended (regardless of nesting level) from another matched selector.</td>
+        </tr>
+        <tr>
+          <td>Grouping selectors</td>
+          <td><code>h1, h2</code></td>
+          <td>Rule sets apply to all selectors separated by commas.</td>
+        </tr>
+      </table>
+    </section>
 
-    <table id="selectors">
-      <thead>
-        <th>Selector</th>
-        <th>Name</th>
-        <th>Description</th>
-      </thead>
-      <tr>
-        <td><code>p</code></td>
-        <td>Type</td>
-        <td>Selects all <code>&lt;p&gt;</code>tags</td>
-      </tr>
-      <tr>
-        <td><code>.class</code></td>
-        <td>Class</td>
-        <td>Selects all elements with <code>class="class"</code></td>
-      </tr>
-      <tr>
-        <td><code>#id</code></td>
-        <td>Id</td>
-        <td>Selects all elements with <code>class="class"</code></td>
-      </tr>
-    </table>
-
-    <table id="specificity">
-      <caption>
-        Specificity rules
-      </caption>
-      <thead>
-        <th>Rule</th>
-        <th>Description</th>
-      </thead>
-      <tr>
-        <td>More specific rules apply</td>
-        <td>The most specific rule will be the one applied.</td>
-      </tr>
-      <tr></tr>
-      <tr></tr>
-      <tr></tr>
-    </table>
+    <section>
+      <h2>Specificity rules</h2>
+      <table id="specificity">
+        <caption>
+          Specificity rules
+        </caption>
+        <thead>
+          <th>Rule</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td>The most specific rules apply</td>
+          <td>The most specific rule will be the one applied.</td>
+        </tr>
+        <tr>
+          <td><code>!important</code> keyword</td>
+          <td>The CSS <code>!important</code> rule is used on declarations to override any other declarations for a property and ignore selector specificity.</td>
+        </tr>
+        <tr>
+          <td>rule</td>
+          <td>description</td>
+        </tr>
+        <tr>
+          <td>rule</td>
+          <td>description</td>
+        </tr>
+      </table>
+    </section>
   </body>
 </html>
