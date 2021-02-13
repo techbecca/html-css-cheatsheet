@@ -51,30 +51,32 @@
     </section>
 
     <section>
-      <h2>Specificity rules</h2>
+      <h2>Specificity</h2>
+      <p> When determining which rule set will be applied to an element, the rule set with the most specific selector statement is applied.</p>
       <table id="specificity">
-        <caption>
-          Specificity rules
-        </caption>
         <thead>
           <th>Rule</th>
           <th>Description</th>
         </thead>
         <tr>
-          <td>The most specific rules apply</td>
-          <td>The most specific rule will be the one applied.</td>
+          <td>How to determine specificity</td>
+          <td>The <em>fewer</em> elements that can be matched to a selector statement, the more <em>specific</em> the selector statement is.</td>
         </tr>
         <tr>
-          <td><code>!important</code> keyword</td>
-          <td>The CSS <code>!important</code> rule is used on declarations to override any other declarations for a property and ignore selector specificity.</td>
+          <td>Selector specificity order</td>
+          <td>The id selector is considered the most specific, then class, then tag.</td>
         </tr>
         <tr>
-          <td>rule</td>
-          <td>description</td>
+          <td>Descendants</td>
+          <td>The more levels of descendants that are used in selectors, the more specific it is.</td>
         </tr>
         <tr>
-          <td>rule</td>
-          <td>description</td>
+          <td>Chaining</td>
+          <td>The more chaining that occurs, the more specific it is.</td>
+        </tr>
+        <tr>
+          <td>The <code>!important</code> keyword</td>
+          <td>The <code>!important</code> rule is used on declarations to override any other declarations for a property and ignore selector specificity. <br><small>Warning: Using the <code>!important</code> keyword is considered bad practice and should be used with caution.</small></td>
         </tr>
       </table>
     </section>
