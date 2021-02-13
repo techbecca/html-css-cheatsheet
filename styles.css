@@ -1,9 +1,8 @@
 body {
-    background-color: oldlace;
+    background-color: white;
 }
 
 h2 {
-    color: orangered;
     text-align: center;
 }
 
@@ -13,15 +12,15 @@ table {
 
 td, th {
     padding: 2px 4px;
-    border-bottom: 1px dashed coral;
+    border-bottom: 1px dashed #FF5297;
 }
 
 thead {
-    background-color: gold;
+    background-color: coral;
 }
 
 code {
-    background-color: bisque;
+    background-color: #FFF352;
 }
 .page {
     margin: 0 auto;
