@@ -1,0 +1,29 @@
+body {
+    background-color: oldlace;
+}
+
+h2 {
+    color: orangered;
+    text-align: center;
+}
+
+table {
+    border: 2px solid coral;
+}
+
+td, th {
+    padding: 2px 4px;
+    border-bottom: 1px dashed coral;
+}
+
+thead {
+    background-color: gold;
+}
+
+code {
+    background-color: bisque;
+}
+.page {
+    margin: 0 auto;
+    width: 80vw;
+}
